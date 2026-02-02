@@ -72,6 +72,7 @@ const objectsAndGifts: Product[] = [
     subtitle: "HALO DECANTER CLEAR",
     price: "$385.00",
     image: "/mock/gift-1.png",
+    featured: true,
   },
   {
     id: "g2",
@@ -79,6 +80,7 @@ const objectsAndGifts: Product[] = [
     subtitle: "HALO DECANTER SMOKE",
     price: "$385.00",
     image: "/mock/gift-1.png",
+    featured: true,
   },
   {
     id: "g3",
@@ -86,6 +88,7 @@ const objectsAndGifts: Product[] = [
     subtitle: "BLUE MOROCCAN GLASS, SHORT",
     price: "$14.00",
     image: "/mock/gift-1.png",
+    featured: true,
   },
   {
     id: "g4",
@@ -93,6 +96,7 @@ const objectsAndGifts: Product[] = [
     subtitle: "MONKEY BOTTLE OPENER",
     price: "$58.00",
     image: "/mock/gift-1.png",
+    featured: true,
   },
   {
     id: "g4",
@@ -100,6 +104,7 @@ const objectsAndGifts: Product[] = [
     subtitle: "MONKEY BOTTLE OPENER",
     price: "$58.00",
     image: "/mock/gift-1.png",
+    featured: true,
   },
 ];
 
