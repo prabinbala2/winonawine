@@ -131,7 +131,7 @@ export default function Page() {
       <SectionSlider title="OBJECTS + GIFTS" products={objectsAndGifts} />
       <SectionSlider title="NEW JUICE" products={newJuice} />
 
-      <InStoreTastings
+      <InStoreTastings 
         iconSrc="/mock/tasting-icon.svg"
         events={[
           {
