@@ -21,6 +21,7 @@ const newJuice: Product[] = [
     subtitle: "2025 PATIO NAT",
     price: "$42.00",
     image: "/mock/bottle-1.png",
+    featured: true,
   },
   {
     id: "p2",
@@ -28,6 +29,7 @@ const newJuice: Product[] = [
     subtitle: "2025 CHARDONNAY",
     price: "$33.00",
     image: "/mock/bottle-1.png",
+    featured: true,
   },
   {
     id: "p3",
@@ -35,6 +37,7 @@ const newJuice: Product[] = [
     subtitle: "2024 LES FLEURS BLANC",
     price: "$31.00",
     image: "/mock/bottle-1.png",
+    featured: true,
   },
   {
     id: "p4",
@@ -42,6 +45,7 @@ const newJuice: Product[] = [
     subtitle: "2023 BANTAM",
     price: "$38.00",
     image: "/mock/bottle-1.png",
+    featured: true,
   },
   {
     id: "p4",
@@ -49,6 +53,7 @@ const newJuice: Product[] = [
     subtitle: "2023 BANTAM",
     price: "$38.00",
     image: "/mock/bottle-1.png",
+    featured: true,
   },
 ];
 
