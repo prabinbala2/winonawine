@@ -1,4 +1,4 @@
-import type { Product } from "@/components/SectionSlider";
+import type { Product } from "@/components/SectionGrid";
 import Menu from "@/components/common/Menu";
 import BannerSlider from "@/components/BannerSlider";
 import SectionSlider from "@/components/SectionSlider";

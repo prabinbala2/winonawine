@@ -3,12 +3,13 @@
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 
-export type Product = {
+type Product = {
   id: string;
   title: string;
   subtitle: string;
   price: string;
   image: string;
+  featured?: boolean;
 };
 
 type Props = {
