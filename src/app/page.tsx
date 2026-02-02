@@ -11,6 +11,7 @@ import Footer from "@/components/common/Footer";
 
 import Image from "next/image";
 
+
 const newJuice: Product[] = [
   {
     id: "p1",

@@ -18,6 +18,12 @@ type MenuItem = {
   submenu?: SubMenuItem[];
 };
 
+type MenuProps = {
+  brand?: string;
+  cartCount?: number;
+};
+
+
 
 const menuItems: MenuItem[] = [
   {
@@ -75,7 +81,10 @@ const tickerItems = [
   "EXPRESS DELIVERY AVAILABLE",
 ];
 
-export default function Menu() {
+export default function Menu({
+  brand = "WINONA",
+  cartCount = 0,
+}: MenuProps) {
   const [openSearch, setOpenSearch] = useState(false);
   const [openCart, setOpenCart] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
@@ -95,7 +104,7 @@ export default function Menu() {
               ☰
             </button>
 
-            <Logo />
+            <Logo text={brand} />
 
             {/* right icons */}
             <div className="absolute right-0 flex items-center gap-3 md:gap-4 text-[11px] tracking-[0.18em]">
