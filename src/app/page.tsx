@@ -1,4 +1,3 @@
-import type { Product } from "@/components/SectionGrid";
 import Menu from "@/components/common/Menu";
 import BannerSlider from "@/components/BannerSlider";
 import SectionSlider from "@/components/SectionSlider";
@@ -12,6 +11,15 @@ import Footer from "@/components/common/Footer";
 
 
 import Image from "next/image";
+
+type Product = {
+  id: string;
+  title: string;
+  subtitle: string;
+  price: string;
+  image: string;
+  featured?: boolean;
+};
 
 
 const newJuice: Product[] = [
