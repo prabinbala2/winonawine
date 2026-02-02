@@ -1,3 +1,4 @@
+import type { Product } from "@/components/SectionGrid";
 import Menu from "@/components/common/Menu";
 import BannerSlider from "@/components/BannerSlider";
 import SectionSlider from "@/components/SectionSlider";
@@ -9,7 +10,6 @@ import OvalCtaBanner from "@/components/OvalCtaBanner";
 import StoreLocations from "@/components/StoreLocations";
 import Footer from "@/components/common/Footer";
 
-import type { Product } from "@/components/SectionGrid";
 
 import Image from "next/image";
 

@@ -9,6 +9,7 @@ export type Product = {
   subtitle: string;
   price: string;
   image: string;
+  featured?: boolean;
 };
 
 type Props = {
