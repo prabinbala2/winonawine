@@ -3,7 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 type SubMenuItem = { label: string };
-type MenuItem = { label: string; submenu?: SubMenuItem[] };
+type MenuItem = {
+  label: string;
+  href: string;
+  submenu?: SubMenuItem[];
+};
 
 type Props = {
   open: boolean;
