@@ -10,7 +10,6 @@ import StoreLocations from "@/components/StoreLocations";
 import Footer from "@/components/common/Footer";
 
 
-import Image from "next/image";
 
 type Product = {
   id: string;
@@ -20,6 +19,7 @@ type Product = {
   image: string;
   featured?: boolean;
 };
+
 
 
 const newJuice: Product[] = [
