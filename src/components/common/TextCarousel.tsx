@@ -38,12 +38,12 @@ export default function TextCarousel({ items, interval = 3000 }: Props) {
   if (!items?.length) return null;
 
   return (
-    <div className="border-t border-black/15 bg-[#f6f5f2]">
+    <div className="border-t border-black/15 bg-[#000]">
       <div className="mx-auto max-w-[1180px] px-5">
         <div className="flex h-9 items-center justify-center overflow-hidden">
           <div
             className={[
-              "text-center text-[10px] font-bold tracking-[0.22em] text-black/70",
+              "text-center text-[10px] font-bold tracking-[0.22em] text-white",
               "transition-opacity duration-300",
               show ? "opacity-100" : "opacity-0",
             ].join(" ")}

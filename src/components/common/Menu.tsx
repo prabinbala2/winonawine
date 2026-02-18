@@ -91,7 +91,7 @@ export default function Menu({
 
   return (
     <>
-      <header className="border-b border-black/20 bg-[#f6f5f2]">
+      <header className="border-b border-black/20 bg-[#d84632]">
         <div className="mx-auto max-w-[1380px] px-4 md:px-5">
           {/* Top row */}
           <div className="relative flex items-center justify-center py-4 md:py-5">

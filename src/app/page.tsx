@@ -121,6 +121,9 @@ export default function Page() {
       <Menu brand="WINONA" cartCount={0} />
       <BannerSlider banners={banners} autoPlayMs={4500} />
       <SectionSlider title="NEW JUICE" products={newJuice} />
+      <div className="py-2">
+          <div className="h-px w-full bg-white" />
+        </div>
       <SectionSlider title="OBJECTS + GIFTS" products={objectsAndGifts} />
       <PromoBanner
         src="/mock/chilled.webp"
@@ -129,6 +132,9 @@ export default function Page() {
       />
 
       <SectionSlider title="OBJECTS + GIFTS" products={objectsAndGifts} />
+      <div className="py-2">
+          <div className="h-px w-full bg-white" />
+        </div>
       <SectionSlider title="NEW JUICE" products={newJuice} />
 
       <InStoreTastings 
@@ -191,12 +197,12 @@ export default function Page() {
         stores={[
           {
             id: "manly",
-            title: "WINONA WINE MANLY",
+            title: "The Drinks Dept",
             lines: [
-              "SHOP 9",
-              "2–14 PITTWATER ROAD",
-              "MANLY NSW 2095",
-              "(02) 9977 3460",
+              "366",
+              "Darling, St Balmain",
+              "NSW 2041",
+              "02 8358 7240",
             ],
             badgeText: "OPEN 7 DAYS",
             hours: [
@@ -205,38 +211,7 @@ export default function Page() {
               "THURSDAY - SATURDAY: 10AM TO 9PM",
             ],
             imageSrc: "/mock/store-manly.webp",
-            imageAlt: "Winona Manly store",
-          },
-          {
-            id: "rozelle",
-            title: "WINONA WINE ROZELLE",
-            lines: ["721 DARLING STREET ROZELLE", "(02) 9977 3460"],
-            badgeText: "OPEN 7 DAYS",
-            hours: [
-              "MONDAY: 12PM TO 8PM",
-              "TUESDAY + WEDNESDAY + SUNDAY: 10AM TO 8PM",
-              "THURSDAY - SATURDAY: 10AM TO 9PM",
-            ],
-            imageSrc: "/mock/store-rozelle.webp",
-            imageAlt: "Winona Rozelle store",
-          },
-          {
-            id: "avalon",
-            title: "WINONA WINE AVALON",
-            lines: [
-              "SHOP 1",
-              "25 OLD BARRENJOEY ROAD",
-              "AVALON BEACH NSW 2107",
-              "(02) 9669 9391",
-            ],
-            badgeText: "OPEN 7 DAYS",
-            hours: [
-              "MONDAY - WEDNESDAY: 10AM TO 8PM",
-              "THURSDAY - SATURDAY: 10AM TO 9PM",
-              "SUNDAY: 10AM TO 8PM",
-            ],
-            imageSrc: "/mock/store-avalon.webp",
-            imageAlt: "Winona Avalon store",
+            imageAlt: "The Drinks Dept",
           },
         ]}
       />

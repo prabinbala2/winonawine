@@ -15,17 +15,15 @@ type Props = {
 export default function AboutUsSection({
   topLabel = "ABOUT US",
   logoSrc = "/mock/about-logo.svg",
-  leftTitle = "WELCOME TO WINONA",
-  leftText = `Winona is a bottle shop in Manly and Avalon Beach focused on quality wines, craft beers, artisan spirits, special food and handmade objects from all over the world. As proud purveyors of well-made wine, we support independent producers working with organic, biodynamic or sustainable practices in the vineyard and minimal intervention in the winery. The beverages we stock are textured expressions of terroir, with place, personality and history embalmed in each bottle. We hope you enjoy them as much as we do.`,
+  leftTitle = "WELCOME TO THE DRINKS DEPT.",
+  leftText = `The Drinks Dept is a bottleshop built by bartenders, created to share industry knowledge with the home entertainer. Through an ever-growing collection of recipes, recommendations, and hands-on guidance, we help everyone—from curious beginners to confident hosts—elevate what they serve.`,
   photoSrc = "/mock/about-photo.webp",
   grapeArtSrc = "/mock/about-grapes.webp",
   rightTitle = "BEHIND THE BOTTLES",
-  rightSubtitle = "Winona is Elli, Cam and Luke.",
-  rightText = `Our store was born from the union of art, music and food, centred on a sizzling romance with good wine. With backgrounds in the art and music industries, Elli and Cam Walsh siphoned their obsession with natural wine into a fruity side project called The Funky Bunch before embarking on this wild ride with good mate and fellow cork dork Luke Miller, owner of Busta, Sunset Sabi and Chica Bonita.
+  rightSubtitle = "At The Drinks Dept, great drinks start with great advice.",
+  rightText = `Our team brings real service-industry experience to every interaction, offering tailored product suggestions, takeaway cocktail recipes, and wine tasting cards for any occasion. We also run weekly drink activations designed to inspire what to make at home and how to make it, highlighting the bottles already on our shelves.
 
-The three of us are many things, but above all we’re lovers of good grog devoted to bringing you the purest juice we can get our hands on.
-
-Bottles up!`,
+For those wanting something truly personal, we offer a bespoke menu service—where a dedicated bartender designs a custom drinks menu and sources everything you need.`,
 }: Props) {
   return (
     <section className="bg-[#f6f5f2]">

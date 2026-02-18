@@ -29,7 +29,6 @@ export default function SectionSlider({ title, products }: Props) {
   const [active, setActive] = useState(0);
   const [perPage, setPerPage] = useState(4);
 
-  // set perPage on mount + resize
   useEffect(() => {
     const update = () => setPerPage(getPerPage(window.innerWidth));
     update();
@@ -41,7 +40,6 @@ export default function SectionSlider({ title, products }: Props) {
     return Math.max(1, Math.ceil(products.length / perPage));
   }, [products.length, perPage]);
 
-  // keep active page valid when perPage changes
   useEffect(() => {
     setActive((prev) => Math.min(prev, pageCount - 1));
   }, [pageCount]);
@@ -65,7 +63,7 @@ export default function SectionSlider({ title, products }: Props) {
   };
 
   return (
-    <section className="bg-[#f6f5f2]">
+    <section className="bg-[#d84632]">
       <div className="mx-auto max-w-[1380px] px-4 md:px-5">
         {/* Title */}
         <div className="flex items-end justify-between pt-10 md:pt-12">
@@ -77,17 +75,15 @@ export default function SectionSlider({ title, products }: Props) {
           <div className="hidden gap-2 md:flex">
             <button
               onClick={prev}
-              className="h-9 w-9 rounded-full border border-black/25 text-black/70 hover:border-black/40 hover:text-black transition disabled:opacity-40"
+              className="h-9 w-9 rounded-full border border-white text-white hover:border-white/40 hover:text-white transition disabled:opacity-40"
               disabled={active === 0}
-              aria-label="Previous"
             >
               ←
             </button>
             <button
               onClick={next}
-              className="h-9 w-9 rounded-full border border-black/25 text-black/70 hover:border-black/40 hover:text-black transition disabled:opacity-40"
+              className="h-9 w-9 rounded-full border border-white text-white hover:border-white/40 hover:text-white transition disabled:opacity-40"
               disabled={active === pageCount - 1}
-              aria-label="Next"
             >
               →
             </button>
@@ -107,7 +103,6 @@ export default function SectionSlider({ title, products }: Props) {
           >
             <style>{`div::-webkit-scrollbar{display:none;}`}</style>
 
-            {/* Each page fills container width */}
             {Array.from({ length: pageCount }).map((_, pageIdx) => {
               const start = pageIdx * perPage;
               const slice = products.slice(start, start + perPage);
@@ -116,7 +111,6 @@ export default function SectionSlider({ title, products }: Props) {
                 <div
                   key={pageIdx}
                   className="w-full shrink-0 snap-start"
-                  aria-label={`Page ${pageIdx + 1}`}
                 >
                   <div
                     className={[
@@ -124,25 +118,23 @@ export default function SectionSlider({ title, products }: Props) {
                       perPage === 1 ? "grid-cols-1" : "",
                       perPage === 2 ? "grid-cols-2 gap-x-6" : "",
                       perPage === 4 ? "md:grid-cols-4 md:gap-x-10" : "",
-                      // ensure desktop spacing also applies when perPage=2 on small screens
                       "items-start",
                     ].join(" ")}
                   >
                     {slice.map((p, idx) => (
                       <div key={p.id} className="relative">
-                        {/* dividers only when 4-up desktop */}
                         {perPage === 4 && idx !== 0 && (
                           <div className="absolute -left-5 top-0 hidden h-full w-px bg-black/20 md:block" />
                         )}
 
-                        <div className="flex flex-col items-center text-center">
+                        {/* WHITE CARD */}
+                        <div className="flex flex-col items-center text-center bg-white rounded-2xl p-6 shadow-md">
                           <div className="relative h-[210px] w-[120px] sm:h-[220px] sm:w-[130px] md:h-[240px] md:w-[140px]">
                             <Image
                               src={p.image}
                               alt={`${p.title} ${p.subtitle}`}
                               fill
                               className="object-contain"
-                              sizes="(min-width: 768px) 140px, (min-width: 640px) 130px, 120px"
                             />
                           </div>
 
@@ -163,7 +155,6 @@ export default function SectionSlider({ title, products }: Props) {
                       </div>
                     ))}
 
-                    {/* fillers only needed for desktop 4-up */}
                     {perPage === 4 &&
                       slice.length < perPage &&
                       Array.from({ length: perPage - slice.length }).map(
@@ -186,7 +177,6 @@ export default function SectionSlider({ title, products }: Props) {
               onClick={prev}
               className="h-9 w-9 rounded-full border border-black/25 text-black/70 hover:border-black/40 hover:text-black transition disabled:opacity-40"
               disabled={active === 0}
-              aria-label="Previous"
             >
               ←
             </button>
@@ -194,7 +184,6 @@ export default function SectionSlider({ title, products }: Props) {
               onClick={next}
               className="h-9 w-9 rounded-full border border-black/25 text-black/70 hover:border-black/40 hover:text-black transition disabled:opacity-40"
               disabled={active === pageCount - 1}
-              aria-label="Next"
             >
               →
             </button>
@@ -207,7 +196,6 @@ export default function SectionSlider({ title, products }: Props) {
             <button
               key={i}
               onClick={() => scrollToPage(i)}
-              aria-label={`Go to page ${i + 1}`}
               className={[
                 "h-2 w-2 rounded-full border border-black/40 transition",
                 i === active ? "bg-black/70" : "bg-transparent",
@@ -215,6 +203,7 @@ export default function SectionSlider({ title, products }: Props) {
             />
           ))}
         </div>
+        
       </div>
     </section>
   );

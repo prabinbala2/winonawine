@@ -46,9 +46,9 @@ export default function BannerSlider({ banners, autoPlayMs }: Props) {
   if (count === 0) return null;
 
   return (
-    <section className="bg-[#f6f5f2]">
+    <section className="bg-[#d84632]">
       <div className="mx-auto max-w-[1380px] px-5 pt-4">
-        <div className="relative overflow-hidden border border-black/15 bg-white">
+        <div className="relative overflow-hidden border border-black/15 bg-[#d84632]">
           {/* Banner frame */}
           <div className="relative aspect-[16/7] w-full">
             {banners.map((b, i) => (
