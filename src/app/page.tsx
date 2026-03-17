@@ -8,6 +8,7 @@ import FeatureBanner from "@/components/FeatureBanner";
 import OvalCtaBanner from "@/components/OvalCtaBanner";
 import StoreLocations from "@/components/StoreLocations";
 import Footer from "@/components/common/Footer";
+import VideoBanner from "@/components/VideoBanner";
 
 
 
@@ -109,26 +110,25 @@ const objectsAndGifts: Product[] = [
 ];
 
 const banners = [
-  { id: "b1", src: "/banner/hero.jpg", alt: "Banner 1" },
-  { id: "b2", src: "/banner/hero-2.jpg", alt: "Banner 2" },
-  { id: "b3", src: "/banner/hero-3.jpg", alt: "Banner 3" },
+  { id: "b1", src: "/banner/hero1.jpg", alt: "Banner 1" },
+  { id: "b2", src: "/banner/hero2.jpg", alt: "Banner 2" },
+  { id: "b3", src: "/banner/hero3.jpg", alt: "Banner 3" },
 ];
 
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-[#f6f5f2]">
-      <Menu brand="WINONA" cartCount={0} />
+      <Menu brand="the drinks dept" cartCount={0} />
       <BannerSlider banners={banners} autoPlayMs={4500} />
       <SectionSlider title="NEW JUICE" products={newJuice} />
       <div className="py-2">
           <div className="h-px w-full bg-white" />
         </div>
       <SectionSlider title="OBJECTS + GIFTS" products={objectsAndGifts} />
-      <PromoBanner
-        src="/mock/chilled.webp"
-        alt="Sydney delivery"
-        heading="CHILLED REDS"
+      <VideoBanner
+        src="/mock/download.mp4"
+        heading=""
       />
 
       <SectionSlider title="OBJECTS + GIFTS" products={objectsAndGifts} />
@@ -143,52 +143,49 @@ export default function Page() {
           {
             id: "e1",
             title: "CASA DI",
-            locationLine: "@ WINONA MANLY",
+            locationLine: "@ THE DRINKS DEPT MANLY",
             timeLine: "FRIDAY 23 JANUARY • 5–7PM • FREE!",
           },
           {
             id: "e2",
             title: "BRASH HIGGINS",
-            locationLine: "@ WINONA AVALON",
+            locationLine: "@ THE DRINKS DEPT AVALON",
             timeLine: "FRIDAY 23 JANUARY • 3–5PM • FREE!",
           },
           {
             id: "e3",
             title: "GENIE",
-            locationLine: "@ WINONA ROZELLE",
+            locationLine: "@ THE DRINKS DEPT ROZELLE",
             timeLine: "FRIDAY 23 JANUARY • 5–7PM • FREE!",
           },
         ]}
       />
 
       <PromoBanner
-        src="/mock/sydney-delivery.webp"
+        src="/mock/sydney-delivery.jpg"
         alt="Sydney delivery"
         heading="SYDNEY SAME DAY DELIVERY"
       />
 
       <CollectionsGrid
         items={[
-          { id: "c1", label: "WINE", iconSrc: "/mock/col-wine.webp" },
-          { id: "c2", label: "BEER & PALS", iconSrc: "/mock/col-beer.webp" },
-          { id: "c3", label: "SPIRITS & SAKE", iconSrc: "/mock/col-spirits.webp" },
-          { id: "c4", label: "OBJECTS ETC.", iconSrc: "/mock/col-objects.webp" },
-          { id: "c5", label: "NON-ALCOHOLIC", iconSrc: "/mock/col-nonalc.webp" },
-          { id: "c6", label: "FOOD & SNACKS", iconSrc: "/mock/col-food.webp" },
+          { id: "c2", label: "CHAMPAGNE", iconSrc: "/mock/CHAMPAGNE.png" },
+          { id: "c1", label: "BEER", iconSrc: "/mock/beer.png" },
+          { id: "c3", label: "COCKTAIL", iconSrc: "/mock/cocktail.png" },
         ]}
       />
 
       <FeatureBanner
-        src="/mock/feature-natural-wine.webp"
+        src="/mock/feature-natural-wine.jpg"
         alt="Natural wine"
         title="WHAT MAKES A WINE NATURAL?"
         buttonText="READ ME"
       />
 
       <OvalCtaBanner
-        src="/mock/winona-forever.jpg"
-        alt="Winona forever"
-        title="WINONA FOREVER"
+        src="/mock/winona-forever1.jpg"
+        alt="THE DRINKS DEPT forever"
+        title="THE DRINKS DEPT FOREVER"
         subtitle="Want us to take care of you every month? A monthly subscription for wine, delivered to you—hassle free."
         buttonText="JOIN TODAY"
       />
@@ -210,7 +207,7 @@ export default function Page() {
               "TUESDAY + WEDNESDAY + SUNDAY: 10AM TO 9PM",
               "THURSDAY - SATURDAY: 10AM TO 9PM",
             ],
-            imageSrc: "/mock/store-manly.webp",
+            imageSrc: "/mock/store-manly.jpg",
             imageAlt: "The Drinks Dept",
           },
         ]}

@@ -16,9 +16,9 @@ type Props = {
 };
 
 export default function ForeverSection({
-  title = "WINONA FOREVER",
+  title = "THE DRINKS DEPT FOREVER",
   subtitle = "LOVE WINE? JOIN THE CLUB. LITERALLY – JOIN OUR CLUB!",
-  description = "WINONA FOREVER IS A MONTHLY PACK OF WINES CURATED BY OUR TEAM OF CERTIFIED CORK DORKS, DELIVERED TO YOUR DOOR.",
+  description = "THE DRINKS DEPT FOREVER IS A MONTHLY PACK OF WINES CURATED BY OUR TEAM OF CERTIFIED CORK DORKS, DELIVERED TO YOUR DOOR.",
   perks = [
     "10% OFF ALL WINES IN STORE AND ONLINE",
     "EXCLUSIVE WINES, RARE ALLOCATIONS AND STAFF FAVES (NO LAME FILLERS!)",
@@ -48,7 +48,7 @@ export default function ForeverSection({
     <section className="bg-[#f6f5f2] py-10">
       <div className="mx-auto max-w-[1380px] px-4 md:px-5">
         {/* Yellow rounded panel */}
-        <div className="rounded-[60px] bg-[#f5c84b] px-6 py-12 md:px-14 md:py-16">
+        <div className="rounded-[60px] bg-[#d8d8d8] px-6 py-12 md:px-14 md:py-16">
           {/* Header */}
           <div className="text-center">
             <div className="text-[42px] font-extrabold tracking-[0.06em] text-[#a21c22] md:text-[74px]">

@@ -57,12 +57,12 @@ export default function Footer() {
         {/* Legal small text */}
         <div className="mt-10 grid gap-6 text-center text-[9px] leading-relaxed tracking-[0.10em] text-white/70 md:grid-cols-3">
           <div>
-            WE ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH WINONA
+            WE ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH THE DRINKS DEPT
             STANDS, THE CANNAGAL AND KAYIMAI PEOPLE, AND PAY OUR RESPECTS TO
             ELDERS PAST, PRESENT AND EMERGING.
           </div>
           <div>
-            WINONA SUPPORTS THE RESPONSIBLE SERVICE OF ALCOHOL. NO ALCOHOL CAN BE
+            THE DRINKS DEPT SUPPORTS THE RESPONSIBLE SERVICE OF ALCOHOL. NO ALCOHOL CAN BE
             SOLD OR SUPPLIED TO ANYONE UNDER 18. IT IS AGAINST THE LAW.
           </div>
           <div>LIQUOR LICENSE # (ADD YOUR LICENSE NUMBER HERE)</div>

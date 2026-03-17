@@ -8,7 +8,7 @@ import AboutUsSection from "@/components/AboutUsSection";
 export default function Page() {
   return (
     <main className="min-h-screen bg-[#f6f5f2]">
-      <Menu brand="WINONA" cartCount={0} />
+      <Menu brand="THE DRINKS DEPT" cartCount={0} />
       <AboutUsSection />
 
       <Footer />

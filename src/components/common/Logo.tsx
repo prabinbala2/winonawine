@@ -7,7 +7,7 @@ type LogoProps = {
 
 export default function Logo({
   src = "/logo.svg",
-  text = "WINONA",
+  text = "THE DRINKS DEPT",
 }: LogoProps) {
   return (
     <div className="flex justify-center items-center gap-2">

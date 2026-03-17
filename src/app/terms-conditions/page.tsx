@@ -4,7 +4,7 @@ import Footer from "@/components/common/Footer";
 export default function Page() {
   return (
     <main className="min-h-screen bg-[#f6f5f2]">
-      <Menu brand="WINONA" cartCount={0} />
+      <Menu brand="THE DRINKS DEPT" cartCount={0} />
 
       {/* TERMS SECTION */}
       <section className="bg-[#f6f5f2]">
@@ -144,7 +144,7 @@ export default function Page() {
                 <p>
                   For questions about these Terms & Conditions, contact us at{" "}
                   <span className="font-semibold text-black">
-                    info@winona.com.au
+                    info@thedrinksdept.com.au
                   </span>
                   .
                 </p>

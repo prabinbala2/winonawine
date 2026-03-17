@@ -82,7 +82,7 @@ const tickerItems = [
 ];
 
 export default function Menu({
-  brand = "WINONA",
+  brand = "THE DRINKS DEPT",
   cartCount = 0,
 }: MenuProps) {
   const [openSearch, setOpenSearch] = useState(false);
