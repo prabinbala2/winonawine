@@ -13,7 +13,7 @@ type Props = {
 };
 
 export default function InStoreTastings({
-  iconSrc = "/mock/tasting-icon.svg",
+  iconSrc = "/mock/tasting.webp",
   events,
 }: Props) {
   return (
@@ -39,7 +39,7 @@ export default function InStoreTastings({
 
           {/* icon */}
           <div className="flex justify-center">
-            <div className="relative h-[170px] w-[170px]">
+            <div className="relative h-[270px] w-[270px]">
               <Image
                 src={iconSrc}
                 alt="tasting icon"

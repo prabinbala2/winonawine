@@ -138,7 +138,7 @@ export default function Page() {
       <SectionSlider title="NEW JUICE" products={newJuice} />
 
       <InStoreTastings 
-        iconSrc="/mock/tasting-icon.svg"
+        iconSrc="/mock/testing.webp"
         events={[
           {
             id: "e1",
@@ -170,8 +170,8 @@ export default function Page() {
       <CollectionsGrid
         items={[
           { id: "c2", label: "CHAMPAGNE", iconSrc: "/mock/CHAMPAGNE.png" },
-          { id: "c3", label: "COCKTAIL", iconSrc: "/mock/cocktail.png" },
           { id: "c1", label: "BEER", iconSrc: "/mock/beer.png" },
+          { id: "c3", label: "COCKTAIL", iconSrc: "/mock/cocktail.png" },
         ]}
       />
 
