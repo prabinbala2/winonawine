@@ -170,8 +170,8 @@ export default function Page() {
       <CollectionsGrid
         items={[
           { id: "c2", label: "CHAMPAGNE", iconSrc: "/mock/CHAMPAGNE.png" },
-          { id: "c1", label: "BEER", iconSrc: "/mock/beer.png" },
           { id: "c3", label: "COCKTAIL", iconSrc: "/mock/cocktail.png" },
+          { id: "c1", label: "BEER", iconSrc: "/mock/beer.png" },
         ]}
       />
 
