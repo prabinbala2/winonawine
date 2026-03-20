@@ -77,7 +77,7 @@ const menuItems: MenuItem[] = [
 
 const tickerItems = [
   "10% Off Any 6+ Wines",
-  "Free Same Day Sydney & Northern Beaches Delivery Orders $100+",
+  "Delivery available via DoorDash & Uber Eats.",
   "EXPRESS DELIVERY AVAILABLE",
 ];
 

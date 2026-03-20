@@ -9,6 +9,8 @@ import OvalCtaBanner from "@/components/OvalCtaBanner";
 import StoreLocations from "@/components/StoreLocations";
 import Footer from "@/components/common/Footer";
 import VideoBanner from "@/components/VideoBanner";
+import EventSection from "@/components/EventSection";
+import EventPopup from "@/components/EventPopup";
 
 
 
@@ -137,6 +139,32 @@ export default function Page() {
         </div>
       <SectionSlider title="NEW JUICE" products={newJuice} />
 
+      <EventSection
+        events={[
+          {
+            id: "1",
+            title: "You should have easily eye on new trends and technologies",
+            description: "Business Plan, Sales, Company Strategy",
+            image: "/mock/event1.jpg",
+            date: "Oct 23",
+          },
+          {
+            id: "2",
+            title: "New Seminar on Newest Food Recipe from World’s best",
+            description: "Business Plan, Sales, Company Strategy",
+            image: "/mock/event1.jpg",
+            date: "Oct 23",
+          },
+          {
+            id: "3",
+            title: "Learn from small things to create something bigger",
+            description: "Business Plan, Sales, Company Strategy",
+            image: "/mock/event1.jpg",
+            date: "Oct 23",
+          },
+        ]}
+      />
+
       <InStoreTastings 
         iconSrc="/mock/testing.webp"
         events={[
@@ -212,6 +240,8 @@ export default function Page() {
           },
         ]}
       />
+
+      <EventPopup />
 
       <Footer />
     </main>
